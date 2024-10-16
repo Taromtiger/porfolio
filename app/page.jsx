@@ -7,6 +7,7 @@ import Journey from '@/components/Journey';
 import Work from '@/components/Work';
 import Contact from '@/components/Contact';
 import { useEffect } from 'react';
+import FixedMenu from '@/components/FixedMenu';
 
 const Home = () => {
   // implement locomotive scroll
@@ -21,8 +22,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Hero />
+      <FixedMenu />
       <Services />
       <About />
       <Journey />
@@ -30,7 +32,7 @@ const Home = () => {
       <Contact />
       {/* {temporary div} */}
       <div className="h-[3000px]"></div>
-    </div>
+    </>
   );
 };
 

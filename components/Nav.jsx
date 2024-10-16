@@ -10,18 +10,18 @@ const links = [
   { name: 'contact' },
 ];
 
-const Nav = ({ containerStyle, listStyle, linkStyle, spy }) => {
+const Nav = ({ containerStyles, listStyles, linkStyles, spy }) => {
   return (
-    <nav className={containerStyle}>
-      <ul className={listStyle}>
+    <nav className={containerStyles}>
+      <ul className={listStyles}>
         {links.map((link, index) => (
           <ScrollLink
             spy={spy}
             key={index}
             activeClass="active"
-            className={linkStyle}
             to={link.name}
             smooth
+            className={linkStyles}
           >
             {link.name}
           </ScrollLink>

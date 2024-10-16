@@ -20,7 +20,7 @@
   }
 
   .h2 {
-    @apply text-[36px] tracking-[-0.02em] leading-[44px];
+    @apply text-[36px] tracking-[-0.02em] leading-[44px] font-semibold;
   }
 
   .h3 {
@@ -39,7 +39,8 @@
     @apply bg-accent hover:bg-accent-hover text-white;
   }
 
-  .input .textarea {
+  .input,
+  .textarea {
     @apply w-full outline-none border border-[#d0d5dd] focus:border-accent rounded-lg placeholder:text-[#667085];
   }
 
@@ -52,6 +53,6 @@
   }
 
   .active {
-    @apply text-accent transition-all duration-200;
+    @apply text-accent transition-all duration-200 !important;
   }
 }
